@@ -123,11 +123,17 @@ header {
 }
 
 #barra-navegacao a {
-    color: white;
+    color: rgb(187, 187, 187);
     text-decoration: none;
+    position: relative;
 }
 
-#barra-navegacao ul {
+#barra-navegacao a:hover, #barra-navegacao a.active {
+    color: #ffffff;
+    border-bottom: 3px solid #b40707;  
+} 
+
+#barra-navegacao ul {   
     display: flex;
     flex-direction: row;
 }
@@ -137,7 +143,7 @@ header {
 }
 
 #barra-navegacao {
-    background-color: rgb(119, 6, 6);
+    background-color: #770606;
     color:white;
 
 }
