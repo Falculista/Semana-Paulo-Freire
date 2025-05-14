@@ -44,20 +44,25 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -65,9 +70,12 @@ table {
 
 nav {
     display: flex;
+    width: 100vw;
+    height: max(8vh, 25px);
     align-items: center; 
     justify-content: center; 
     padding-left: 0.25vw;
+    font-size: min(3vw, 1.15rem);
     text-align: center;
 }
 
@@ -95,12 +103,17 @@ nav > a:hover {
     border-radius: 0px;
 }
 
+header > * {
+    padding: 1%;
+}
+
 header {
+    width: 100vw;
+    height: 12.5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 1.25%;
     background-color: #C4170C;
 
     align-items: center;
@@ -120,7 +133,7 @@ header {
 }
 
 #barra-navegacao ul li{
-    margin: 12px 30px;
+    margin: 1.5vh 1.5vh;
 }
 
 #barra-navegacao {
@@ -139,7 +152,7 @@ header {
     font-family: "Cormorant SC", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3.5em;
+    font-size: min(3.5rem, 5vw);
 
     position: absolute;
     left: 50%;
@@ -151,7 +164,7 @@ header {
 }
 
 .pesquisa {
-    border-radius: 5px;
+    border-radius: 2.5%;
     border: 2px, solid, #8a1109;
     padding: 7px 20px 7px 20px;
 
