@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,7 +29,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-*, #text1-bn, #text2-bn, #text3-bn   {
+*, #text1-bn, #text2-bn, #text3-bn, h1{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -30,8 +37,15 @@ time, mark, audio, video {
     font-style: bold;
 }
 
+.text_footer {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
 strong {
-    color: red;
+    color: red; 
     font-weight: 400;
 }
 
@@ -109,40 +123,40 @@ header > * {
 
 header {
     width: 100vw;
-    height: 12.5vh;
-    display: flex;
+    height: clamp(35px, 12.5vh, 72px);
+    display: flex
+;
     flex-direction: row;
+    text-align: center;
     justify-content: space-between;
-
     background-color: #C4170C;
-
     align-items: center;
     color: white;
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: sticky;   
 }
 
-#barra-navegacao a {
+.navbar a {
     color: rgb(187, 187, 187);
     text-decoration: none;
     position: relative;
 }
 
-#barra-navegacao a:hover, #barra-navegacao a.active {
+.navbar a:hover, .navbar a.active {
     color: #ffffff;
     border-bottom: 3px solid #b40707;  
 } 
 
-#barra-navegacao ul {   
+.navbar ul {   
     display: flex;
     flex-direction: row;
 }
 
-#barra-navegacao ul li{
+.navbar ul li{
     margin: 1.5vh 1.5vh;
 }
 
-#barra-navegacao {
+.navbar {
     background-color: #770606;
     color:white;
 
@@ -181,6 +195,8 @@ header {
 
 
 main {
+    height: 80vh;
+
     text-align: left;
     padding-top: 30px;
 
@@ -192,6 +208,59 @@ main {
 main > article > h1 {
     font-size: 2em;
     font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.border-footer {
+    border-top: solid;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#footer_contacts {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_contacts .footer-link{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5em;
+
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_contacts .footer-link:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    background-color: var(--color-neutral-0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p.TextoSegundo {
