@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site exemplo</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="/main.js" type="text/javascript" defer></script>
+    
 </head>
 <body>
     <header>
@@ -27,7 +29,7 @@
         </div>
     </header>
 
-    <div id="barra-navegacao">
+    <div class="navbar">
         <nav>
             <ul id="nav-links" style="display: flex; flex-direction: row;">
                 <li><a id="text1-bn" class="active" href="telaInicial.html">Nosso Projeto</a></li>
@@ -65,9 +67,32 @@
     </main>
 
     <footer>
+        <div class="text_footer">
+            <div id="footer_content">
+                <div class="border-footer">
+                    <div id="footer_contacts">
+                            <a href="https://www.instagram.com/etecitaquera/" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/etecdeitaquera   " class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.google.com/maps/place/Escola+Técnica+Estadual+Itaquera/@-23.5470505,-46.4769894,14z/data=!4m10!1m2!2m1!1sETEC+de+itaquera!3m6!1s0x94ce6427fe3f5b23:0x54b863d343c81f8f!8m2!3d-23.5470505!4d-46.4388806!15sChBFVEVDIGRlIGl0YXF1ZXJhWhIiEGV0ZWMgZGUgaXRhcXVlcmGSARB0ZWNobmljYWxfc2Nob29sqgE4EAEyHhABIhrGRYH5DKf3K-k_bZhDkifcqFEaRb-8muAeIzIUEAIiEGV0ZWMgZGUgaXRhcXVlcmHgAQA!16s%2Fg%2F1yfjnstbd?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D" class="footer-link" id="localizacao-etec">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </a>
+                            <a href="https://www.cps.sp.gov.br/etecs/etec-de-itaquera-cohab-2/" class="footer-link" id="site-etec">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
 
+            <div id="footer_copyright">
+                &#169
+                2025 all rights reserved
+            </div>
+        </div>
     </footer>
-
 
 </body>
 </html>
