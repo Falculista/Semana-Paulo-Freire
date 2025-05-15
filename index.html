@@ -9,6 +9,76 @@
     <link rel="stylesheet" href="style.css">
     <script src="/main.js" type="text/javascript" defer></script>
     
+    <style>
+        a.Links{
+            color: rgb(184, 0, 0);
+            background-color: rgba(255, 0, 0, 0.2);
+            font-size: 1.1em;
+            font-weight: bolder;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 0px 4px 0px 4px;
+        }
+        a.Links:hover{
+            text-decoration: underline;
+        }
+
+
+        p.TextoSegundo {
+            color:rgb(59, 59, 59);
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+
+        h1.H1 {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 4%;
+            color: red;
+        }
+
+        a.botao {
+            text-decoration: none;
+
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0% 5% 0% 5%;
+            border: 2px black solid;
+            border-radius: 10px;
+
+            background-color: rgb(203, 255, 255);
+        }
+        #idoso, #crianca {
+            position: relative;
+            border: 1.2px rgb(0, 0, 0) solid;
+            width: 50%;
+            height: 60vh;
+            padding: 2% 3% 3% 3%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: rgb(255, 255, 255);
+            text-align: justify;
+            font-weight: 400;
+        }
+        #idoso strong, #crianca strong {
+            font-weight: bold;
+            color: black;
+        }
+
+        #caixas {
+            display: flex;
+            flex-direction: row;
+            gap: 3%;
+            justify-content: space-between;
+        }
+
+        
+    </style>
 </head>
 <body>
     <header>
@@ -25,14 +95,14 @@
         <h1 id="header-title">S. Paulo Freire</h1>
         
         <div class="right-side">
-            <div class="pesquisa">ETEC 2ºDSA</div>
+            <div class="pesquisa">ETEC 2º e 3ºDSA</div>
         </div>
     </header>
 
-    <div class="navbar">
+    <div id="navbar">
         <nav>
             <ul id="nav-links" style="display: flex; flex-direction: row;">
-                <li><a id="text1-bn" class="active" href="telaInicial.html">Nosso Projeto</a></li>
+                <li><a id="text1-bn" class="active" href="index.html">Nosso Projeto</a></li>
                 <li><a id="text2-bn" href="estatutoCrianca.html">Estatuto da Criança</a></li>
                 <li><a id="text3-bn" href="estatutoIdoso.html">Estatuto do Idoso</a></li>
             </ul>
@@ -41,32 +111,46 @@
 
     <main>
         <article>
-            <h1>
+            <h1 id="H1">
                 Nosso Projeto
             </h1>
+            
+            <div> 
 
-            <p class="TextoSegundo">Idosos podem chegar a receber ate 2milhoes em dinheiro no PIX em 2025.</p>
+            <p class="TextoSegundo">
+                Neste site, você vai encontrar informações essenciais sobre os direitos garantidos pelo <a class="Links" href="estatutoCrianca.html">Estatuto da Criança e do Adolescente</a> e pelo <a class="Links" href="estatutoIdoso.html">Estatuto do Idoso</a>. Nosso objetivo é esclarecer como essas leis protegem diferentes fases da vida, garantindo respeito, cuidado e cidadania para todos.
 
-            <p class="autor">por <strong>blablabla</strong></p>
+                Explore os conteúdos abaixo para entender melhor seus direitos e responsabilidades — seja você jovem, idoso, familiar ou profissional da área social.
+            </p>
+            
+            <p class="autor">por <strong>ETEC 2º e 3ºDSA</strong></p>
+            
+            <div id="caixas">
+                <div id="idoso">
+                    <h1 class="H1">Estatuto do Idoso</h1>
 
-            <div class="video"> 
-                    <iframe width="100%" height="300vh" src="https://www.youtube.com/embed/YaXpMue6kH0?si=uVAjIXDHqKlanuNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>O Estatuto do Idoso é uma lei que protege os <strong>direitos das pessoas com 60 anos ou mais. </strong></p>
+                    
+                    <p>Ele assegura o acesso à <strong>saúde, transporte, moradia, lazer e respeito</strong>, além de combater a <strong>violência, o abandono e a discriminação contra os idosos</strong>. A família, a sociedade e o poder público têm a obrigação de garantir um envelhecimento digno e com qualidade de vida.</p>
+
+                    <a class="botao" href="estatutoIdoso.html">Clique aqui</a>
+                </div>
+                <div id="crianca">
+                    <h1 class="H1">Estatuto da Criança</h1>
+
+                    <p>O ECA é uma lei que garante os <strong>direitos das crianças e dos adolescentes</strong> no Brasil. Ele protege quem tem até 18 anos, assegurando o <strong>direito à vida, saúde, educação, lazer, convivência familiar e comunitária</strong>. O Estatuto também define <strong>deveres da família, da sociedade e do Estado</strong> para garantir o desenvolvimento seguro e saudável de crianças e adolescentes.</p>
+
+                    <a class="botao" href="estatutoCrianca.html">Clique aqui</a>
+
+                </div>
             </div>
 
-            <div class="Texto"> 
-                <h2 class="h2">O que é o Estatuto do Idoso?</h2>
-
-                <p>
-                    Instituído pela Lei nº 10.741 de 1º de outubro de 2003, o Estatuto do Idoso assegura os direitos fundamentais para as pessoas com mais de 60 anos.
-                </p>
-                <p>
-                    O conjunto de leis estabelece uma série de benefícios para promover o bem-estar, a dignidade e a segurança dos idosos, reconhecendo suas necessidades e limitações, protegendo-os contra abusos e negligências.
-                </p>
-            </div>
+            
         </article>
     </main>
 
-    <footer>
+    <br><br>
+   <footer>
         <div class="text_footer">
             <div id="footer_content">
                 <div class="border-footer">
@@ -77,7 +161,7 @@
                             <a href="https://www.facebook.com/etecdeitaquera   " class="footer-link" id="facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.google.com/maps/place/Escola+Técnica+Estadual+Itaquera/@-23.5470505,-46.4769894,14z/data=!4m10!1m2!2m1!1sETEC+de+itaquera!3m6!1s0x94ce6427fe3f5b23:0x54b863d343c81f8f!8m2!3d-23.5470505!4d-46.4388806!15sChBFVEVDIGRlIGl0YXF1ZXJhWhIiEGV0ZWMgZGUgaXRhcXVlcmGSARB0ZWNobmljYWxfc2Nob29sqgE4EAEyHhABIhrGRYH5DKf3K-k_bZhDkifcqFEaRb-8muAeIzIUEAIiEGV0ZWMgZGUgaXRhcXVlcmHgAQA!16s%2Fg%2F1yfjnstbd?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D" class="footer-link" id="localizacao-etec">
+                            <a href="https://www.google.com/maps/place/Escola+Técnica+Estadual+Itaquera/@-23.5470505,-46.4414609,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce6427fe3f5b23:0x54b863d343c81f8f!8m2!3d-23.5470505!4d-46.4388806!16s%2Fg%2F1yfjnstbd?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D" class="footer-link" id="localizacao-etec">
                                 <i class="fa-solid fa-earth-americas"></i>
                             </a>
                             <a href="https://www.cps.sp.gov.br/etecs/etec-de-itaquera-cohab-2/" class="footer-link" id="site-etec">
