@@ -9,4 +9,7 @@ function toggleNav() {
         document.getElementById("navbar").style.display = 'flex'
         isNavVisible = true
     }
+function evento() {
+    console.log('heksld');
+}
 }
